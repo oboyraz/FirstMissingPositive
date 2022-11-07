@@ -17,18 +17,18 @@ public class FirstMissingPositive {
     private static int firstMissingPositive(int[] arr) {
         List<Integer> arr1 = new ArrayList<>();
         Arrays.sort(arr);
-        int counter = 1;
+        int missingPos = 1;
         for (int i = 0; i < arr.length; i++) {
             arr1.add(arr[i]);
         }
         for (int i = 0; i <arr1.size() ; i++) {
-            if (arr1.contains(counter)){
-                counter++;
+            if (arr1.contains(missingPos)){
+                missingPos++;
             }
             else{
                 break;
             }
         }
-        return counter;
+        return missingPos;
     }
 }

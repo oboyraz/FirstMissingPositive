@@ -17,9 +17,7 @@ public class FirstMissingPositive {
     private static int firstMissingPositive(int[] arr) {
         List<Integer> arr1 = new ArrayList<>();
         Arrays.sort(arr);
-        int lastNumber = arr[arr.length-1];
         int counter = 1;
-        boolean minPoz = true;
         for (int i = 0; i < arr.length; i++) {
             arr1.add(arr[i]);
         }
